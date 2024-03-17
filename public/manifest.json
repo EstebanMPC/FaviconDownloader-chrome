@@ -1,12 +1,14 @@
 {
     "manifest_version": 3,
-    "name": "Faviconwallet",
+    "name": "FaviconDownloader",
     "version": "1.0.0" ,
     "action":{
         "default_popup": "index.html"
     },
     "permissions": [
-        "scripting"
+        "scripting",
+        "tabs",
+        "downloads"
     ],
     "host_permissions": [
         "http://*/*",
