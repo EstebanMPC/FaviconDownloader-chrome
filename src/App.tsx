@@ -2,16 +2,9 @@ import './App.css'
 
 function App() {
   const onClick = async () => {
-    // let[tab] = await chrome.tabs.query({ active: true })
-    // chrome.scripting.executeScript({
-    //   target: {tabId : tab.id!},
-    //   func: () => {
-    //     // alert('Hello hello, Hola');
-    //   }
-    // });
     chrome.tabs.query({'active': true, 'windowId': chrome.windows.WINDOW_ID_CURRENT},
-      function(tabs){
-          alert(`http://www.google.com/s2/favicons?domain=${tabs[0].url}`);
+      function openTab(tabs){
+          window.open(`http://www.google.com/s2/favicons?domain=${tabs[0].url}`);
       }
     );
   }
