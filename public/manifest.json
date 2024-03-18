@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "FaviconDownloader",
-    "description": "Download favicons. This extension opens a new tab containing the favicon. Drag and drop to your desktop to keep. Auto-download feature coming soon.",
+    "description": "Download favicons. A new tab opens, allowing you to drag and drop the favicon to your desktop. Auto-download feature coming soon.",
     "version": "1.0.0" ,
     "action":{
         "default_popup": "index.html"
